@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tribute to Albert Einstein</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Inline CSS */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f9;
+      margin: 0;
+      padding: 0;
+    }
+
+    .hero {
+      background: url('https://upload.wikimedia.org/wikipedia/commons/c/cf/Albert_Einstein_1921.jpg') center center/cover no-repeat;
+      height: 70vh;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background-attachment: fixed;
+    }
+
+    .hero .highlight {
+      color: #f4d03f;
+    }
+
+    .navbar {
+      background-color: #34495e;
+    }
+
+    .navbar .nav-link {
+      color: white;
+    }
+
+    .navbar .nav-link:hover {
+      color: #f4d03f;
+    }
+
+    .about, .achievements, .gallery {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      text-align: justify;
+    }
+
+    .achievements {
+      background-color: #ecf0f1;
+    }
+
+    .highlight-text {
+      color: #2980b9;
+    }
+
+    .gallery img {
+      border-radius: 8px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    footer {
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    .contact-btn {
+      background-color: #2980b9;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+
+    .contact-btn:hover {
+      background-color: #3498db;
+    }
+
+    .section-title {
+      color: #2980b9;
+      font-size: 2rem;
+      margin-bottom: 30px;
+      font-weight: bold;
+    }
+
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Tribute Page</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#achievements">Achievements</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div>
+      <h1 class="display-4" style="color: #34495e;">Tribute to <span class="highlight" style="color: #2c3e50;">Albert Einstein</span></h1>
+      <p class="lead" style="color: #3498db;">The Father of Modern Physics</p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2 class="section-title text-center">About Albert Einstein</h2>
+    <p>Albert Einstein, born on March 14, 1879, in Ulm, Germany, was a theoretical physicist who developed the theory of relativity, one of the two pillars of modern physics. His famous equation, <span class="highlight-text">E=mc²</span>, is recognized worldwide as the formula of mass-energy equivalence. Einstein received the Nobel Prize in Physics in 1921 for his explanation of the photoelectric effect, a pivotal step in the development of quantum theory.</p>
+    <p>Known for his curiosity and innovation, Einstein was not just a brilliant scientist but also an advocate for peace, freedom, and human rights. His contributions have left an indelible mark on science and humanity.</p>
+  </section>
+
+  <!-- Achievements Section -->
+  <section id="achievements" class="achievements">
+    <h2 class="section-title text-center">Key Achievements</h2>
+    <ul class="list-group">
+      <li class="list-group-item">Developed the theory of relativity (1905, 1915).</li>
+      <li class="list-group-item">Nobel Prize in Physics for the photoelectric effect (1921).</li>
+      <li class="list-group-item">Contributed to the development of quantum mechanics.</li>
+      <li class="list-group-item">Published over 300 scientific papers.</li>
+      <li class="list-group-item">A staunch advocate for civil rights and peace.</li>
+    </ul>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="gallery py-5">
+    <h2 class="section-title text-center">Gallery</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Albert_Einstein_Head.jpg" class="img-fluid" alt="Albert Einstein">
+      </div>
+      <div class="col-md-4">
+        <img src="https://www.bing.com/th?id=OIP.TJ3MEgzOJAUXXBnD_CjV0wDfEX&w=157&h=185&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" class="img-fluid" alt="Einstein at work">
+      </div>
+      <div class="col-md-4">
+        <img src="data:image/jpeg;base64,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" class="img-fluid" alt="Einstein Nobel Prize">
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-light py-5">
+    <h2 class="section-title text-center">Contact</h2>
+    <p class="text-center">Feel free to reach out for any queries or discussions related to Albert Einstein's life and work.</p>
+    <div class="text-center">
+      <a href="./tribute.html" class="contact-btn">Email Us</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; Tribute Page</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

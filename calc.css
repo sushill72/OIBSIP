@@ -1,0 +1,101 @@
+body {
+  background-color: #d39d9d;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-position: fixed;
+  text-align: center;
+}
+
+h1 {
+  color: white;
+  font-family: Inconsolata;
+}
+
+#calc {
+  background-color: #534747 ;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  width: 360px; /* Adjusted width */
+  height: 480px; /* Adjusted height */
+  border: 5px inset #413737;
+  padding: 20px;
+  border-radius: 15px; /* Slightly rounded edges */
+  margin: auto; /* Adjusted margin for better centering */
+  box-shadow: 0px 5px 15px 5px rgba(87, 79, 79, 0.5); /* Softer and larger shadow */
+}
+
+#calc-display {
+  margin-bottom: 20px;
+  background: #111;
+  height: 50px; /* Increased height for better display */
+  padding: 10px;
+  outline: none;
+  border: 3px inset #333;
+  border-radius: 10px; /* Rounded corners */
+  text-align: right;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 24px; /* Increased font size for better readability */
+  color: lightgreen;
+}
+
+.keys {
+  cursor: pointer;
+  outline: none;
+  border: 2px outset #555;
+  background: linear-gradient(#444, #111);
+  color: white;
+  width: 50px; /* Increased width for better button size */
+  height: 50px; /* Increased height */
+  margin: 5px; /* More spacing between buttons */
+  box-shadow: 0px 2px 5px 1px #111;
+  opacity: 0.92;
+  border-radius: 8px; /* Rounded button corners */
+}
+
+.keys:active {
+  border: 2px inset #555;
+  background: linear-gradient(#111, #444);
+  color: #aaa;
+}
+
+.bottom {
+  position: relative;
+  left: -2px;
+}
+
+#equals {
+  cursor: pointer;
+  outline: none;
+  border: 2px outset #555;
+  background: linear-gradient(#444, #111);
+  color: white;
+  width: 100px; /* Increased width for the equals button */
+  height: 50px; /* Height to match the keys */
+  margin-left: 10px;
+  margin-right: 10px;
+  box-shadow: 0px 2px 5px 1px #111;
+  opacity: 0.92;
+  border-radius: 8px; /* Rounded corners */
+}
+
+#equals:active {
+  border: 2px inset #555;
+  background: linear-gradient(#111, #444);
+  color: #aaa;
+}
+
+div > h3 {
+  color: #aaa;
+  opacity: 0.56;
+  font-family: Quicksand;
+  letter-spacing: 3px;
+  text-shadow: 1px 4px #111;
+}
+
+.spacer {
+  padding: 50px;
+}

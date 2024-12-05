@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Page</title>
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.2.0/css/all.css'>
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.2.0/css/fontawesome.css'>
+  <link rel="stylesheet" href="./login.css">
+  <style>
+    /* Add some simple styles for the authentication response */
+    .error {
+      color: red;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+  <div class="screen">
+    <div class="screen__content">
+      <form class="login" id="loginForm" onsubmit="return authenticateUser(event)">
+        <div class="login__field">
+          <i class="login__icon fas fa-user"></i>
+          <input type="text" class="login__input" id="username" placeholder="User name / Email">
+          <span id="usernameError" class="error"></span> <!-- Error message -->
+        </div>
+        <div class="login__field">
+          <i class="login__icon fas fa-lock"></i>
+          <input type="password" class="login__input" id="password" placeholder="Password">
+          <span id="passwordError" class="error"></span> <!-- Error message -->
+        </div>
+        <button class="button login__submit">
+          <span class="button__text">Log In Now</span>
+          <i class="button__icon fas fa-chevron-right"></i>
+        </button>				
+      </form>
+      <div class="social-login">
+        <h3>log in via</h3>
+        <div class="social-icons">
+          <a href="#" class="social-login__icon fab fa-instagram"></a>
+          <a href="#" class="social-login__icon fab fa-facebook"></a>
+          <a href="#" class="social-login__icon fab fa-twitter"></a>
+        </div>
+      </div>
+    </div>
+    <div class="screen__background">
+      <span class="screen__background__shape screen__background__shape4"></span>
+      <span class="screen__background__shape screen__background__shape3"></span>		
+      <span class="screen__background__shape screen__background__shape2"></span>
+      <span class="screen__background__shape screen__background__shape1"></span>
+    </div>		
+  </div>
+</div>
+<!-- partial -->
+
+<script>
+// Simple JavaScript Authentication (for demonstration purposes)
+function authenticateUser(event) {
+  event.preventDefault();  // Prevent form submission
+  
+  // Get user inputs
+  const username = document.getElementById('username').value;
+  const password = document.getElementById('password').value;
+  
+  // Clear any previous error messages
+  document.getElementById('usernameError').innerText = '';
+  document.getElementById('passwordError').innerText = '';
+  
+  // Basic validation
+  let isValid = true;
+  
+  if (username === '') {
+    document.getElementById('usernameError').innerText = 'Username/Email is required';
+    isValid = false;
+  }
+
+  if (password === '') {
+    document.getElementById('passwordError').innerText = 'Password is required';
+    isValid = false;
+  }
+
+  // Basic credentials check (for demo purposes, replace with real auth logic)
+  const validUsername = 'user@example.com'; // example username
+  const validPassword = 'password123';      // example password
+
+  if (isValid) {
+    if (username === validUsername && password === validPassword) {
+      alert('Login successful');
+      // Redirect or perform any other action after successful login
+      window.location.href = 'landing.html'; // Example of redirecting to another page
+    } else {
+      alert(`Invalid username or password
+	  use username: user@example.com
+	  pass: password123`);
+    }
+  }
+}
+</script>
+
+</body>
+</html>

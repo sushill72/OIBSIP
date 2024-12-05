@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to Our Page</title>
+</head>
+<body style="margin: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+
+  <!-- Full-screen container -->
+  <div style="height: 100vh; background: url('https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080') center center/cover no-repeat; display: flex; align-items: center; justify-content: center; text-align: center; color: white;">
+
+    <!-- Welcome Section -->
+    <div style="max-width: 600px; padding: 20px; background-color: rgba(0, 0, 0, 0.5); border-radius: 15px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);">
+      <h1 style="font-size: 3rem; margin-bottom: 20px; font-weight: bold;">Welcome to Our World</h1>
+      <p style="font-size: 1.25rem; margin-bottom: 30px; line-height: 1.6;">Explore new horizons and step into a world filled with possibilities. Whether you're here to discover something new, make lasting memories, or simply be inspired, we are delighted to have you on this journey.</p>
+      <blockquote style="font-size: 1.2rem; font-style: italic; color: #f4d03f; margin-bottom: 40px;">"The best way to predict the future is to create it." – Peter Drucker</blockquote>
+      
+      <!-- Button with Link -->
+      <a href="./potfilio.html" style="text-decoration: none;">
+        <button style="background-color: #f4d03f; color: white; border: none; padding: 15px 30px; font-size: 1.5rem; border-radius: 25px; cursor: pointer; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); transition: transform 0.3s ease; border: 2px solid #f4d03f;">
+          Click Me
+        </button>
+      </a>
+    </div>
+
+  </div>
+
+  <!-- Button Hover Effect -->
+  <script>
+    document.querySelector("button").addEventListener("mouseover", function() {
+      this.style.transform = "scale(1.1)";
+    });
+    document.querySelector("button").addEventListener("mouseout", function() {
+      this.style.transform = "scale(1)";
+    });
+  </script>
+
+</body>
+</html>
